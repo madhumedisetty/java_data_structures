@@ -14,6 +14,7 @@ public class BinarySearch {
         int target = sc.nextInt();
         int result = binarySearch(arr, target);
         System.out.println(result);
+        sc.close(); 
     }
 
     public static int binarySearch(int[] arr, int target) {
@@ -35,6 +36,4 @@ public class BinarySearch {
         }   
         return -1;
     }
-
-    
 }

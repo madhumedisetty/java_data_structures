@@ -1,9 +1,9 @@
-package com.advanced_datastructures;
+// package com.advanced_datastructures;
 
 import java.util.*;
 
 
-public class TrieNode {
+class TrieNode<T> {
     // Map to store child nodes, where the key is the character and value is the child TrieNode
     Map<Character, TrieNode<T>> children;
         

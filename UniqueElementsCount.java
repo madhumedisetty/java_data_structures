@@ -1,4 +1,4 @@
-package com.datastructure.array;
+// package com.datastructure.array;
 import java.util.HashSet;
 import java.util.Scanner;
 

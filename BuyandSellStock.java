@@ -1,4 +1,4 @@
-package com.datastructure.array;
+// package com.datastructure.array;
 import java.util.Scanner;
 public class BuyandSellStock {
     public static int maxProfit(int[] prices) {

@@ -1,4 +1,4 @@
-package com.datastructure.array;
+// package com.datastructure.array;
 import java.util.Scanner;
 public class InsertionSort {
     public static void insertionSort(int[] arr){
