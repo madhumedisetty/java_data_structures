@@ -122,6 +122,52 @@ public class BinaryTree {
         dfsRec(node.right);
     }
 
+    //delete a node from the tree
+    void delete(int key) {
+        root = deleteRec(root, key);
+    }
+
+    // A recursive function to delete a node with given key in BST
+    Node deleteRec(Node root, int key) {
+        // Base case: if the tree is empty
+        if (root == null)
+            return root;
+
+        // Otherwise, recur down the tree
+        if (key < root.data)
+            root.left = deleteRec(root.left, key);
+        else if (key > root.data)
+            root.right = deleteRec(root.right, key);
+
+        // if key is same as root's key, then This is the node to be deleted    
+        else {
+            // node with only one child or no child
+            if (root.left == null)
+                return root.right;
+            else if (root.right == null)
+                return root.left;
+
+            // node with two children: Get the inorder successor (smallest in the right subtree)
+            root.data = minValue(root.right);
+
+            // Delete the inorder successor
+            root.right = deleteRec(root.right, root.data);  
+        }
+
+        return root;
+    }
+
+    int minValue(Node root) {
+        int minv = root.data;
+        while (root.left != null) {
+            minv = root.left.data;
+            root = root.left;
+        }
+        return minv;
+    }
+    
+    
+
     // Driver Code
     public static void main(String[] args) {
         BinaryTree tree = new BinaryTree();

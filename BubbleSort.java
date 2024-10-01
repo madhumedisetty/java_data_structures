@@ -32,5 +32,3 @@ public class BubbleSort {
 
 // Stock buy and sell 
 // Longest consecutive subsequence 
-// Subarry sum should be equal to target 
-// Check if the pair with given sum exists or not
