@@ -1,6 +1,6 @@
 import java.util.*;
 
-public class ReversingStringUsingStack {
+public class ReversingAString {
 
     public void usingSplit(String str) {
         // Split the string into words
@@ -73,7 +73,7 @@ public class ReversingStringUsingStack {
         System.out.println("Enter a sentence:");
         String str = sc.nextLine();
         
-        ReversingStringUsingStack reverser = new ReversingStringUsingStack();
+        ReversingAString reverser = new ReversingAString();
         reverser.usingSplit(str);
         reverser.withoutUsingSplit(str);
         
